@@ -1,149 +1,96 @@
-;(function () {
-	
-	'use strict';
+// Initialize AOS
+AOS.init({
+	duration: 800,
+	easing: 'slide',
+  });
+  
+  // Smooth Scroll for Anchor Links
+  $('a[href^="#"]').on('click', function (event) {
+	var target = this.hash;
+	if (target) {
+	  event.preventDefault();
+	  $('html, body').animate(
+		{
+		  scrollTop: $(target).offset().top - 70,
+		},
+		800
+	  );
+	}
+  });
+  
+  // Back to Top Button and Navbar Background Change
+  $(window).scroll(function () {
+	if ($(this).scrollTop() > 500) {
+	  $('.back-to-top').fadeIn();
+	  $('.navbar').addClass('scrolled');
+	} else {
+	  $('.back-to-top').fadeOut();
+	  $('.navbar').removeClass('scrolled');
+	}
+  });
+  
+  // Dark Mode Toggle
+  if (localStorage.getItem('darkMode') === 'enabled') {
+	$('body').addClass('dark-mode');
+  }
+  
+  $('#dark-mode-toggle').on('click', function () {
+	$('body').toggleClass('dark-mode');
+	if ($('body').hasClass('dark-mode')) {
+	  localStorage.setItem('darkMode', 'enabled');
+	  $(this).html('<i class="fas fa-sun"></i>');
+	} else {
+	  localStorage.setItem('darkMode', null);
+	  $(this).html('<i class="fas fa-moon"></i>');
+	}
+  });
+  
+  // Update Dark Mode Toggle Icon on Load
+  if ($('body').hasClass('dark-mode')) {
+	$('#dark-mode-toggle').html('<i class="fas fa-sun"></i>');
+  } else {
+	$('#dark-mode-toggle').html('<i class="fas fa-moon"></i>');
+  }
+  
+  // Close navbar on link click (for mobile view)
+  $('.navbar-collapse a').click(function(){
+	$(".navbar-collapse").collapse('hide');
+  });
 
-	var isMobile = {
-		Android: function() {
-			return navigator.userAgent.match(/Android/i);
-		},
-			BlackBerry: function() {
-			return navigator.userAgent.match(/BlackBerry/i);
-		},
-			iOS: function() {
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-			Opera: function() {
-			return navigator.userAgent.match(/Opera Mini/i);
-		},
-			Windows: function() {
-			return navigator.userAgent.match(/IEMobile/i);
-		},
-			any: function() {
-			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+// Initialize Map
+function initMap() {
+	var myLatlng = [33.793034, -118.125264];
+	var map = L.map('map').setView(myLatlng, 11);
+  
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	  attribution: '&copy; OpenStreetMap contributors'
+	}).addTo(map);
+  
+	L.marker(myLatlng).addTo(map)
+	  .bindPopup('Nirmaan Goyal<br>5050 E Garford St, Long Beach, CA 90815')
+	  .openPopup();
+  }
+  
+  window.onload = function() {
+	initMap();
+  };
+
+  // Read more functionality
+document.addEventListener('DOMContentLoaded', function() {
+	const readMoreLinks = document.querySelectorAll('.read-more');
+  
+	readMoreLinks.forEach(function(link) {
+	  link.addEventListener('click', function(e) {
+		e.preventDefault();
+		const cardBody = link.closest('.card-body');
+		const description = cardBody.querySelector('.project-description');
+		description.classList.toggle('expanded');
+		if (description.classList.contains('expanded')) {
+		  link.textContent = 'Read less';
+		} else {
+		  link.textContent = 'Read more';
 		}
-	};
-
-	
-	var fullHeight = function() {
-
-		if ( !isMobile.any() ) {
-			$('.js-fullheight').css('height', $(window).height());
-			$(window).resize(function(){
-				$('.js-fullheight').css('height', $(window).height());
-			});
-		}
-	};
-
-	// Parallax
-	var parallax = function() {
-		$(window).stellar();
-	};
-
-	var contentWayPoint = function() {
-		var i = 0;
-		$('.animate-box').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
-				
-				i++;
-
-				$(this.element).addClass('item-animate');
-				setTimeout(function(){
-
-					$('body .animate-box.item-animate').each(function(k){
-						var el = $(this);
-						setTimeout( function () {
-							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
-								el.addClass('fadeIn animated-fast');
-							} else if ( effect === 'fadeInLeft') {
-								el.addClass('fadeInLeft animated-fast');
-							} else if ( effect === 'fadeInRight') {
-								el.addClass('fadeInRight animated-fast');
-							} else {
-								el.addClass('fadeInUp animated-fast');
-							}
-
-							el.removeClass('item-animate');
-						},  k * 100, 'easeInOutExpo' );
-					});
-					
-				}, 50);
-				
-			}
-
-		} , { offset: '85%' } );
-	};
-
-
-
-	var goToTop = function() {
-
-		$('.js-gotop').on('click', function(event){
-			
-			event.preventDefault();
-
-			$('html, body').animate({
-				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
-			
-			return false;
-		});
-
-		$(window).scroll(function(){
-
-			var $win = $(window);
-			if ($win.scrollTop() > 200) {
-				$('.js-top').addClass('active');
-			} else {
-				$('.js-top').removeClass('active');
-			}
-
-		});
-	
-	};
-
-	var pieChart = function() {
-		$('.chart').easyPieChart({
-			scaleColor: false,
-			lineWidth: 4,
-			lineCap: 'butt',
-			barColor: '#FF9000',
-			trackColor:	"#f5f5f5",
-			size: 160,
-			animate: 1000
-		});
-	};
-
-	var skillsWayPoint = function() {
-		if ($('#fh5co-skills').length > 0 ) {
-			$('#fh5co-skills').waypoint( function( direction ) {
-										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( pieChart , 400);					
-					$(this.element).addClass('animated');
-				}
-			} , { offset: '90%' } );
-		}
-
-	};
-
-
-	// Loading page
-	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
-	};
-
-	
-	$(function(){
-		contentWayPoint();
-		goToTop();
-		loaderPage();
-		fullHeight();
-		parallax();
-		// pieChart();
-		skillsWayPoint();
+	  });
 	});
-
-
-}());
+  });
+  
