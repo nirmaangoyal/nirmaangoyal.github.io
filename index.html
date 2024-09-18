@@ -1,732 +1,480 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Nirmaan Goyal - Software Engineer Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="portfolio,nirmaan, software engineer, los angeles,computer science" />
-	<meta name="author" content="Nirmaan Goyal" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nirmaan Goyal - Software Engineer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Nirmaan Goyal, a Software Engineer and Full Stack Developer based in Long Beach, California.">
+  <meta name="keywords" content="portfolio, Nirmaan Goyal, software engineer, full stack developer, web developer">
+  <meta name="author" content="Nirmaan Goyal">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:400,500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+  <!-- Simple Icons -->
+  <link rel="stylesheet" href="https://cdn.simpleicons.org/simpleicons/1.13.0/simpleicons.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Nirmaan Goyal</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <!-- Dark Mode Toggle -->
+        <!-- <button class="btn btn-outline-light ml-3" id="dark-mode-toggle"><i class="fas fa-moon"></i></button> -->
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<header id="hero" class="d-flex align-items-center">
+  <div class="container text-center" data-aos="fade-up">
+    <h1>Nirmaan Goyal</h1>
+    <h2>Software Engineer | Full Stack Developer</h2>
+    <a href="#projects" class="btn btn-primary btn-lg">View My Projects</a>
+  </div>
+  <!-- Background Images Collage -->
+  <div class="hero-background">
+    <div class="collage">
+      <img src="images/hero1.png" alt="Scale Conference">
+      <img src="images/hero2.png" alt="Golden Gate Bridge">
+      <img src="images/hero3.png" alt="Coding Competition">
+    </div>
+  </div>
+</header>
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center">Projects</h2>
+    <div class="row mt-5">
+      <!-- Project Item: Growth Book App -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100">
+          <img src="images/skillbeatsFullLogo.png" class="card-img-top project-img" alt="Growth Book App">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Growth Book App</h5>
+            <p class="card-text flex-grow-1">
+              Architected and developed a cross-platform mobile application using <strong>React Native</strong> and <strong>Firebase</strong>, focusing on personal growth and development. Implemented real-time data synchronization with <strong>Firebase Realtime Database</strong>, user authentication with <strong>Firebase Auth</strong>, and cloud functions for serverless backend logic. Optimized performance for both iOS and Android platforms, achieving a smooth and responsive user experience. The app maintains a <strong>5.0-star rating</strong> on the App Store and Google Play.
+            </p>
+            <div class="mt-auto">
+              <a href="https://apps.apple.com/app/id1671673449" class="btn btn-primary btn-sm" target="_blank">iOS App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.growthbook" class="btn btn-success btn-sm" target="_blank">Google Play Store</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Item: Celebraision -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100">
+          <img src="images/Celebraisions.png" class="card-img-top project-img" alt="Celebraision Web App">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Celebraision</h5>
+            <p class="card-text flex-grow-1">
+              Led the end-to-end development of a campaign management web application using the <strong>MERN stack</strong> (<strong>MongoDB</strong>, <strong>Express.js</strong>, <strong>React.js</strong>, <strong>Node.js</strong>). Designed and implemented RESTful APIs, developed a responsive frontend with React and <strong>Redux</strong>, and managed data persistence with MongoDB. Deployed the application on <strong>AWS EC2</strong> instances with <strong>Nginx</strong> for load balancing and used <strong>AWS S3</strong> for asset storage. Implemented <strong>CI/CD pipelines</strong> using <strong>Jenkins</strong> and <strong>GitHub Actions</strong>, reducing deployment time by 50%. The platform successfully managed campaigns for over <strong>50 clients</strong>, increasing their engagement by 30%.
+            </p>
+            <div class="mt-auto">
+              <a href="https://celebraision.aisubjective.com/" class="btn btn-primary btn-sm" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Item: Skillbeats Landing Page -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100">
+          <img src="images/skillbeatsDashboard.webp" class="card-img-top project-img" alt="Skillbeats Landing Page">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Skillbeats Landing Page</h5>
+            <p class="card-text flex-grow-1">
+              Developed a feature-rich landing page and dashboard for the <strong>Growth Book App</strong> using <strong>React.js</strong>, <strong>Node.js</strong>, <strong>Firebase</strong>, <strong>Tailwind CSS</strong>, and <strong>HTML</strong>. Implemented server-side rendering with <strong>Next.js</strong> to enhance performance and SEO. Created a secure dashboard for authors to create and manage courses, integrating <strong>Firebase Auth</strong> for authentication and <strong>Firestore</strong> for real-time data storage. Performed extensive <strong>SEO optimization</strong>, improving organic traffic by 40%. Deployed the application on <strong>Vercel</strong> for seamless CI/CD and scalability.
+            </p>
+            <div class="mt-auto">
+              <a href="https://skillbeats-deploy-2vk5.vercel.app/" class="btn btn-primary btn-sm" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Item: PDF Chat and Flashcard Generator -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100">
+          <img src="images/pdf-chat-flashcards.png" class="card-img-top project-img" alt="PDF Chat and Flashcard Generator">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">PDF Chat & Flashcard Generator</h5>
+            <p class="card-text flex-grow-1">
+              Engineered a backend service utilizing <strong>Python</strong> and <strong>Flask</strong> to interact with PDF files and generate flashcards through a <strong>Retrieval-Augmented Generation (RAG)</strong> system. Integrated <strong>OpenAI's GPT-4 API</strong> for advanced natural language processing and <strong>Pinecone</strong> for vector similarity search. Developed algorithms to extract key concepts from PDFs, enabling users to engage in interactive chat and receive autogenerated flashcards. Optimized the system for scalability, handling large datasets and concurrent user requests.
+            </p>
+            <div class="mt-auto">
+              <a href="https://github.com/ankitraj999/Flask-FlashCard-Server-RAG" class="btn btn-primary btn-sm" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Item: GradeYourTeacher RAG System -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card h-100">
+          <img src="images/gradeyourteacher.png" class="card-img-top project-img" alt="GradeYourTeacher RAG System">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">GradeYourTeacher RAG System</h5>
+            <p class="card-text flex-grow-1">
+              Developed a professor rating application enhanced with a <strong>Retrieval-Augmented Generation (RAG)</strong> system using <strong>Express.js</strong>, <strong>OpenAI GPT-4</strong>, <strong>Pinecone</strong>, and <strong>Firebase</strong>. Implemented RESTful APIs to handle user interactions and data retrieval. Utilized <strong>Pinecone's vector database</strong> for efficient similarity search, allowing for intelligent and context-aware responses. Integrated <strong>Firebase</strong> for authentication and real-time database functionalities. Ensured data privacy and compliance with educational data regulations.
+            </p>
+            <div class="mt-auto">
+              <a href="https://github.com/nirmaangoyal/gradeyourteacher" class="btn btn-primary btn-sm" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add more project items as needed -->
+    </div>
+  </div>
+</section>
 
 
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+  
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Skills</h2>
+      <div class="row mt-5">
+        <!-- Skill Category -->
+        <div class="col-md-4">
+          <h4 class="text-center mb-4">Languages</h4>
+          <div class="d-flex flex-wrap justify-content-center">
+            <!-- Skill Items -->
+            <div class="skill-item text-center m-2">
+              <i class="devicon-python-plain colored"></i>
+              <p>Python</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-javascript-plain colored"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-typescript-plain colored"></i>
+              <p>TypeScript</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-java-plain colored"></i>
+              <p>Java</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-cplusplus-plain colored"></i>
+              <p>C++</p>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Category -->
+        <div class="col-md-4">
+          <h4 class="text-center mb-4">Frameworks & Libraries</h4>
+          <div class="d-flex flex-wrap justify-content-center">
+            <!-- Skill Items -->
+            <div class="skill-item text-center m-2">
+              <i class="devicon-react-original colored"></i>
+              <p>React.js</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-nodejs-plain colored"></i>
+              <p>Node.js</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-express-original colored"></i>
+              <p>Express.js</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-flask-original colored"></i>
+              <p>Flask</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-angularjs-plain colored"></i>
+              <p>Angular</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-tailwindcss-plain colored"></i>
+              <p>Tailwind CSS</p>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Category -->
+        <div class="col-md-4">
+          <h4 class="text-center mb-4">Tools & Technologies</h4>
+          <div class="d-flex flex-wrap justify-content-center">
+            <!-- Skill Items -->
+            <div class="skill-item text-center m-2">
+              <i class="devicon-docker-plain colored"></i>
+              <p>Docker</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-amazonwebservices-plain colored"></i>
+              <p>AWS</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-git-plain colored"></i>
+              <p>Git</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-mongodb-plain colored"></i>
+              <p>MongoDB</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-linux-plain colored"></i>
+              <p>Linux</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-jenkins-plain colored"></i>
+              <p>Jenkins</p>
+            </div>
+            <!-- Additional Skills -->
+            <div class="skill-item text-center m-2">
+              <i class="devicon-tensorflow-original colored"></i>
+              <p>TensorFlow</p>
+            </div>
+            <div class="skill-item text-center m-2">
+              <i class="devicon-numpy-original colored"></i>
+              <p>NumPy</p>
+            </div>
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+  <!-- Experience & Education Section -->
+<!-- Experience & Education Section -->
+<section id="experience" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center">Experience & Education</h2>
+    <div class="timeline mt-5">
+      <!-- Timeline Item -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Software Engineering Graduate Assistant</h3>
+          <span class="date">March 2024 – Present | Carson, CA</span>
+          <span class="company">Innovation Incubator, CSU Dominguez Hills</span>
+          <p>
+            <ul>
+              <li><strong>Architected</strong> and <strong>developed</strong> the <em>Growth Book App</em> (iOS and Android) using React Native and Firebase, enhancing user engagement by 30%.</li>
+              <li><strong>Led</strong> a team of 5 in creating <em>Celebraision</em>, a MERN stack web app for campaign management, resulting in a 25% increase in client acquisition.</li>
+              <li><strong>Collaborated</strong> cross-functionally to ensure timely project delivery and alignment with organizational goals.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Software Engineer Fellow</h3>
+          <span class="date">July 2024 – Present | Remote</span>
+          <span class="company">HeadStarter AI</span>
+          <p>
+            <ul>
+              <li><strong>Developed</strong> AI-driven applications using Next.js, OpenAI, Pinecone, and Stripe API, enhancing application efficiency by 40%.</li>
+              <li><strong>Implemented</strong> CI/CD pipelines with Git and Docker, reducing deployment time by 50%.</li>
+              <li><strong>Enhanced</strong> backend development and API management skills in a fast-paced environment.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="timeline-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Full Stack Developer</h3>
+          <span class="date">September 2022 – May 2023 | Noida, India</span>
+          <span class="company">Webmobril Technologies</span>
+          <p>
+            <ul>
+              <li><strong>Engineered</strong> full-stack applications using Node.js, Angular, React, Next.js, and MongoDB, improving user load times by 35%.</li>
+              <li><strong>Optimized</strong> server response time by 45% through implementation of GraphQL and RESTful APIs.</li>
+              <li><strong>Improved</strong> database performance via MongoDB sharding and replica sets.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="timeline-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Full Stack Developer</h3>
+          <span class="date">March 2021 – September 2022 | Noida, India</span>
+          <span class="company">InfoWiz</span>
+          <p>
+            <ul>
+              <li><strong>Collaborated</strong> with cross-functional teams to deliver applications using HTML, CSS3, React.js, Node.js, MongoDB and Firebase.</li>
+              <li><strong>Led</strong> code reviews, enhancing code quality by 20% and ensuring best practices.</li>
+              <li><strong>Managed</strong> version control with Git, facilitating seamless team collaboration.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+        <div class="timeline-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Intern</h3>
+          <span class="date">May 2018 – July 2018 | Noida, India</span>
+          <span class="company">Fujitsu</span>
+          <p>
+            <ul>
+              <li><strong>Managed</strong> server operations and optimized AWS data transfers for Harvard University thus reducing downtime.</li>
+              <li><strong>Automated</strong> data restoration processes, improving efficiency.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+        <div class="timeline-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Master’s in Computer Science</h3>
+          <span class="date">Aug 2023 – May 2025 | Carson, CA</span>
+          <span class="company">California State University, Dominguez Hills</span>
+          <p>
+            <ul>
+              <li><strong>GPA:</strong> 4.0/4.0</li>
+              <li><strong>Relevant Courses:</strong> Advanced Algorithms, Machine Learning, Software Engineering, Human-Computer Interaction.</li>
+              <li><strong>Achievements:</strong> Won university vide-coding competition organised by CHASI. </li>
+              <li><strong>Projects:</strong> Developed an Dashboard for adverstisement and accounting using microsoft power apps for a mulitnational company-CURACAO</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <!-- Timeline Item -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="700">
+        <div class="timeline-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Bachelor of Technology in Computer Science</h3>
+          <span class="date">Aug 2015 – May 2019 | Noida, India</span>
+          <span class="company">Jaypee Institute of Information Technology</span>
+          <p>
+            <ul>
+              <li><strong>Achievements:</strong> Won 3 inter-university powerlifting competitions</li>
+              <li><strong>Senior Project:</strong> Developed a real-time emotion detection system using tensorflow,python,numpy and deep learning alogrithms.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	</head>
-	<body>
-		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">	
-		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center">
-						<div class="display-t js-fullheight">
-							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-								<div class="profile-thumb" style="background: url(images/user-3.jpg) center center;"></div>
-								<h1><span>Nirmaan Goyal</span></h1>
-								<h3><span>Full Stack Developer</span></h3>
-								<p>
-									<ul class="fh5co-social-icons">
-										<li><a href="https://github.com/nirmaangoyal"><i class="icon-github2"></i></a></li>
-										<li><a href="https://www.linkedin.com/in/nirmaangoyal" target="_blank"><i class="icon-linkedin2"></i></a></li>
-									</ul>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-	
-		<div id="fh5co-about" class="animate-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>About Me</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<ul class="info">
-							<li><span class="first-block">Full Name:</span><span class="second-block">Nirmaan Goyal</span></li>
-							<li><span class="first-block">Phone:</span><span class="second-block">408-230-6526</span></li>
-							<li><span class="first-block">Email:</span><span class="second-block">nirmaan.goyal.23@gmail.com</span></li>
-							<li><span class="first-block">Location:</span><span class="second-block">Long Beach, California</span></li>
-							<li><span class="first-block">GitHub:</span><span class="second-block">nirmaangoyal</span></li>
-						</ul>
-					</div>
-					<div class="col-md-8">
-						<h2>Hello There!</h2>
-						<p>I'm a Full Stack Developer with a strong background in web technologies and cloud computing. Currently pursuing my Master's in Computer Science, I'm passionate about creating efficient and innovative software solutions.</p>
-						<p>With experience in both front-end and back-end development, I've worked on projects ranging from campaign management systems to real-time object detection applications. I'm always eager to take on new challenges and continue learning in this ever-evolving field.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div id="fh5co-resume" class="fh5co-bg-color">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Resume</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0">
-						<ul class="timeline">
-							<li class="timeline-heading text-center animate-box">
-								<div><h3>Work Experience</h3></div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Full Stack Developer</h3>
-										<span class="company">Webmobril Technologies - Sep 2022 - May 2023</span>
-									</div>
-									<div class="timeline-body">
-										<p>Developed full-stack applications using Node.js, Angular, React, Next.js, and MongoDB. Created RESTful APIs, optimized MongoDB, and implemented JWT authentication. Served as primary client contact for project requirements and feedback.</p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Internship</h3>
-										<span class="company">Fujitsu - May 2018 - Jul 2018</span>
-									</div>
-									<div class="timeline-body">
-										<p>Handled servers of Harvard University and transferred data to AWS as an intern.</p>
-									</div>
-								</div>
-							</li>
-	
-							<br>
-							<li class="timeline-heading text-center animate-box">
-								<div><h3>Education</h3></div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Master's in Computer Science</h3>
-										<span class="company">California State University, Dominguez Hills - Aug 2023 - May 2025</span>
-									</div>
-									<div class="timeline-body">
-										<p>GPA: 4.0; Second place in Coding competition at CAHSI. Relevant courses: Algorithms, Data Structures, Software Engineering, HCI</p>
-									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Bachelor's Degree</h3>
-										<span class="company">Jaypee Institute of Information Technology - Aug 2015 - May 2019</span>
-									</div>
-									<div class="timeline-body">
-										<p>Relevant courses: Operating Systems, Distributed Computing, Introduction to Cloud Computing, Computer Architecture and Organization, Object Oriented Programming.</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	
-		<div id="fh5co-features" class="animate-box">
-			<div class="container">
-				<div class="services-padding">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2>My Projects</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-bargraph"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Celebraision</h3>
-									<p>Developed a web application for campaign management using the MERN stack, enhancing client interaction and operational efficiency.</p>
-									<p><a href="https://celebraision.aisubjective.com/" target="_blank">View Project</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-bargraph"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Admin Panel for Curacao</h3>
-									<p>Built Admin panel for Curacao with Next.js, Node.js, MongoDB; improved backend management. Utilized Microsoft Power Apps and Power BI for enhanced data visualization.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-search"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Real-time Object & Facial Expression Detection</h3>
-									<p>Implemented using computer vision and deep learning (YOLO, Faster R-CNN, TensorFlow).</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div id="fh5co-skills" class="animate-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Technical Skills</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="skill-card">
-							<h3>Programming Languages</h3>
-							<ul>
-								<li>Python</li>
-								<li>JavaScript</li>
-								<li>C/C++</li>
-								<li>Java</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="skill-card">
-							<h3>Web Technologies</h3>
-							<ul>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>React</li>
-								<li>Angular</li>
-								<li>Node.js</li>
-								<li>Next.js</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="skill-card">
-							<h3>Databases & Cloud</h3>
-							<ul>
-								<li>MongoDB</li>
-								<li>AWS</li>
-								<li>Docker</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="skill-card">
-							<h3>Tools & Frameworks</h3>
-							<ul>
-								<li>Jenkins</li>
-								<li>Selenium</li>
-								<li>Power Apps</li>
-								<li>Power BI</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="skill-card">
-							<h3>Machine Learning</h3>
-							<ul>
-								<li>TensorFlow</li>
-								<li>YOLO</li>
-								<li>Faster R-CNN</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="skill-card">
-							<h3>Other Skills</h3>
-							<ul>
-								<li>RESTful APIs</li>
-								<li>JWT Authentication</li>
-								<li>CI/CD</li>
-								<li>Version Control (Git)</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
 
-		<div id="fh5co-features" class="animate-box">
-			<div class="container">
-				<div class="services-padding">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2>My Services</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-bargraph"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Web Development (MERN Stack)</h3>
-									<p>Expertise in building full-stack web applications using MongoDB, Express.js, React, and Node.js. Proficient in creating RESTful APIs and implementing JWT authentication.</p>
-								</div>
-							</div>
-						</div>
-		
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-genius"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>DevOps</h3>
-									<p>Experience with Docker containerization, CI/CD pipelines, and cloud services like AWS. Skilled in optimizing deployment processes and improving development workflows.</p>
-								</div>
-							</div>
-						</div>
-		
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-laptop"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Software Engineering</h3>
-									<p>Strong foundation in algorithms, data structures, and object-oriented programming. Experienced in developing efficient and scalable software solutions across various domains.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-		
-					<div class="row">
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-mobile"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Front-end Development</h3>
-									<p>Proficient in modern front-end technologies including React, Angular, and Next.js. Skilled in creating responsive and user-friendly interfaces.</p>
-								</div>
-							</div>
-						</div>
-		
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-cog"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Back-end Development</h3>
-									<p>Experienced in building robust server-side applications using Node.js and Express.js. Skilled in database management with MongoDB and optimizing database queries.</p>
-								</div>
-							</div>
-						</div>
-		
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-search"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>AI and Machine Learning</h3>
-									<p>Experience in implementing computer vision and deep learning models, including real-time object detection and facial expression recognition using YOLO, Faster R-CNN, and TensorFlow.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- <div id="fh5co-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Skills</h2>
-				</div>
-			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
-				</div>
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center">Contact Me</h2>
+    <p class="text-center">I'm always open to new opportunities. Feel free to reach out to me via email or phone.</p>
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/xnnakqdv" method="POST" class="contact-form">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" name="fname" class="form-control" placeholder="First Name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+          </div>
+          <!-- Honeypot Field (Optional) -->
+          <input type="text" name="_gotcha" style="display:none">
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <!-- Map -->
+        <div id="map" style="width: 100%; height: 300px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>Ruby</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Java</strong>90%</span></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">95%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">WordPress</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">PHP</span><span class="value-right">80%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Java</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">Design</span><span class="value-right">100%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Ruby</span><span class="value-right">70%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Python</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">jQuery</span><span class="value-right">75%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
 
-	<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Work</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-1.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-2.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Brading</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-3.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-4.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Design</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-5.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Website</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-6.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-7.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Brading</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-8.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<!-- <div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Post on Medium</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Photoshoot On The Street</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Surfing at Philippines</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Capture Living On Uderwater</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	
-	<div id="fh5co-started" class="fh5co-bg-dark">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Hire Me!</h2>
-					<p>I'm always open to new opportunities and challenges. With my diverse skill set in full-stack development and passion for creating innovative solutions, I can be a valuable asset to your team.</p>
-					<p><a href="#fh5co-consult" class="btn btn-default btn-lg">Contact Me</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!-- Footer -->
+  <footer id="footer" class="py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Nirmaan Goyal. All Rights Reserved.</p>
+      <ul class="social-links list-inline">
+        <li class="list-inline-item"><a href="https://github.com/nirmaangoyal" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/nirmaangoyal" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+        <li class="list-inline-item"><a href="mailto:nirmaan.goyal.23@gmail.com"><i class="fas fa-envelope fa-lg"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form action="#">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
+  <!-- JavaScript Libraries -->
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
-
-			</form>	
-		</div>
-	</div>
-
-	<div id="fh5co-map" style="width: 100%; height: 400px;"></div>
-	</div>
-	
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; 2024 Nirmaan Goyal. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	
-	<!-- Main -->
-	<script src="js/main.js"></script>
-
-	<script>
-		document.querySelector('#fh5co-started .btn').addEventListener('click', function(e) {
-			e.preventDefault();
-			document.querySelector('#fh5co-consult').scrollIntoView({ 
-				behavior: 'smooth' 
-			});
-		});
-		</script>
-	</body>
+  <script src="js/main.js"></script>
+</body>
 </html>
-
