@@ -59,7 +59,7 @@ AOS.init({
 
 // Initialize Map
 function initMap() {
-	var myLatlng = [33.793034, -118.125264];
+	var myLatlng = [37.3456523, -121.9524568];
 	var map = L.map('map').setView(myLatlng, 11);
   
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -67,7 +67,7 @@ function initMap() {
 	}).addTo(map);
   
 	L.marker(myLatlng).addTo(map)
-	  .bindPopup('Nirmaan Goyal<br>5050 E Garford St, Long Beach, CA 90815')
+	  .bindPopup('Nirmaan Goyal<br>852 N Winchester Blvd, Santa clara, CA 95050')
 	  .openPopup();
   }
   
